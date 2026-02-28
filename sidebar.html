@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+  <div id="resize-handle"></div>
+
+  <div id="header">
+    <div id="logo">
+      <span id="logo-icon">▶</span>
+      <span id="logo-text">YT·QA</span>
+    </div>
+    <div id="header-actions">
+      <button id="theme-toggle" title="Toggle theme">◑</button>
+      <button id="clear-btn" title="Clear chat">⌫</button>
+    </div>
+  </div>
+
+  <div id="chat-box"></div>
+
+  <div id="input-area">
+    <input id="question-input" type="text" placeholder="ask anything about this video" autocomplete="off" />
+    <button id="ask-btn">↑</button>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>

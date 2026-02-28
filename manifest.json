@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Q&A",
+  "version": "1.0",
+  "description": "Ask questions about any YouTube video",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:5000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+  {
+    "resources": ["sidebar.html", "sidebar.css", "sidebar.js"],
+    "matches": ["https://www.youtube.com/*"]
+  }
+],
+  "icons": {
+    "128": "icon.png"
+  }
+}
